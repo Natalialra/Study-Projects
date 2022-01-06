@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca endereço por CEP</title>
+    <link rel="stylesheet" href="endereco-pelo-cep.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h3 >Buscar Endereço pelo CEP</h3>
+  </div>
+  <div class="header2">
+    <input  type="text" id="cepp" onblur="mascaraCep()"  maxlength="8" placeholder="Digite seu CEP"><br>
+    <input type="button" value="Buscar"  id="buscarbtn" onclick="buscar()">
+  </div>
+  <div class="container">
+    <label for="logradouro" class=""></label>
+    <input type="text" class="forms-label"  placeholder="Rua" id="logradouro" disabled>
+    
+    <label for="bairro"></label>
+    <input type="text" class="forms-label"  placeholder="Bairro" id="bairro" disabled>
+        
+    <label for="localidade"></label>
+    <input type="text" class="forms-label"  placeholder="Cidade" id="localidade" disabled>
+        
+    <label for="uf"></label>
+    <input type="text" class="forms-label"  placeholder="Estado" id="uf" disabled>
+          
+  </div>
+  <div class="return">
+    <p class="return1" id="infoRetorno" name="infoErro"></p>
+    <p class="return1" id="infoRetorno1" name="infoErro1"></p>   
+  </div>
+</body>
+</html>

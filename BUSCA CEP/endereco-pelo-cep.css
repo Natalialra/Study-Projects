@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:linear-gradient(rgba(235, 191, 222, 0.637),
+    rgba(221, 106, 187, 0.836)),
+    url(/fundo.jpg) round;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.header2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 15%;
+    margin: 1%;
+}
+
+#cepp {
+    width: 13%;
+    height: 40%;
+    min-width: 95px;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+#cepp:focus{
+    border: 5px solid rgb(174, 113, 231);
+}
+
+#buscarbtn {
+    width: 10%;
+    height: 40%;
+    min-width: 93px;
+    font-size: 16px;
+    border-radius: 7px;
+    background: linear-gradient(45deg, #cb0ee4, #820386) ;
+    color: white;
+    margin-bottom: 1%;
+}
+
+#buscarbtn:hover {
+    letter-spacing: 3px;
+    background: linear-gradient(to left, #cb0ee4, #820386);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 50%;
+    height: 30%;
+    min-height: 131px;
+}
+
+.forms-label {
+    margin: 0.5%;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 50%;
+    height: 15%;
+}
+
+input{
+    text-align: center;
+    font-size: 30px;
+    background:seashell;
+    border:none;
+}
+
+.forms {
+    width: 30%;
+}
+
+.return {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    min-height: 105px;
+    border-radius: 7px;
+    background-color: azure;
+    height: 13%;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#infoRetorno, #infoRetorno1 {
+    display: flex;
+    align-self: center;
+}
+
+#infoRetorno {
+    font-weight: bolder;
+    font-size: 20px;
+    
+}
+
+#infoRetorno1 {
+    padding: 0 5% 0 5%;
+    margin-top: 2%;
+}
+
+@media (max-width:472px) {
+    #cepp {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 100%;
+    }
+    
+    .container > input {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+    
+    .return {
+        width: 80%;
+        height: 15%;
+        min-height: 105px;
+    }
+
+    #infoRetorno {
+        font-size: 13px;
+    }
+
+    #infoRetorno1 {
+        font-size: 12px;
+    }
+
+    #buscarbtn {
+        width: 22%;
+    }
+}
+
+@media screen and (min-width:473px) and (max-width:768px) {
+    #cepp {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+    }
+    
+    .container > input {
+        width: 60%;
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+    
+    .return {
+        width: 60%;
+        height: 15%;
+        min-height: 105px;
+    }
+
+    #infoRetorno {
+        font-size: 17px;
+    }
+
+    #infoRetorno1 {
+        font-size: 15px;
+    }
+
+    #buscarbtn {
+        width: 25%;
+        height: 40%;
+        font-size: 14px;
+}
+}
+
+@media screen and (min-width:769px) and (max-width:1598px) {
+    #cepp {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+    }
+    
+    .container > input {
+        width: 40%;
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+    
+    .return {
+        width: 40%;
+        height: 15%;
+        min-height: 105px;
+    }
+
+    #infoRetorno {
+        font-size: 15px;
+    }
+
+    #infoRetorno1 {
+        font-size: 13px;
+    }
+
+    #buscarbtn {
+        width: 14%;
+        height: 40%;
+        font-size: 14px;
+}
+}
+
